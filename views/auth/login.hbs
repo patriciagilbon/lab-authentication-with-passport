@@ -1,0 +1,17 @@
+<h2>Login</h2>
+<form action="/login" method="post" id="form-container">
+<div>
+<label for="username">Username</label>
+<input type="text" name="username" id="username">
+</div>
+<div>
+<label for="password">Password</label>
+<input type="password" name="password" id="password">
+{{#if errormessage}}
+<div class="error-message">{{errormessage}}</div>
+{{/if}}
+</div>
+    <button>Submit</button>
+    <p class="account-message"> Don't have an account yet?</p>
+    <a href="/signup">Signup</a>
+</form>
